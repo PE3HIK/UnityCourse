@@ -66,32 +66,36 @@
     <Compile Include="Assets\Scripts\BuiiPrimetives.cs" />
     <Compile Include="Assets\Scripts\HalloWorld.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\StickHero\StickHeroController.cs" />
+    <Compile Include="Assets\Scripts\StickHero\StickHeroPlatform.cs" />
+    <Compile Include="Assets\Scripts\StickHero\StickHeroPlayer.cs" />
+    <Compile Include="Assets\Scripts\StickHero\StickHeroStick.cs" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>E:/Работа/unity-course/ReznikUnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>E:/Работа/UnityReznik/UnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
