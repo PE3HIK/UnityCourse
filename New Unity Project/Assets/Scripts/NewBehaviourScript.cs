@@ -52,10 +52,15 @@ public class NewBehaviourScript : MonoBehaviour
                 myInstance = Instantiate(figures[Random.Range(0, figures.Length)], spawnPoint4.position, Quaternion.identity);
             }
         }
+        /*
         if (endPoint1.transform.position.y >= spawnPoint.transform.position.y)
         {
-            Instantiate(Text, spawnPoint5.position, Quaternion.identity);
+                  Instantiate(Text, spawnPoint5.position, Quaternion.identity);
         }
+        */
+        
+        Text.gameObject.SetActive(endPoint1.transform.position.y >= spawnPoint.transform.position.y);
+
 
     }
 }
