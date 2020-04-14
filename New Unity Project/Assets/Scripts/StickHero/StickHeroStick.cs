@@ -50,11 +50,11 @@ public class StickHeroStick : MonoBehaviour
         if (isScale)
         {
             float scaleY = transform.localScale.y;
-            if (scaleY >= 2f)
-            {
-                StopScaling();
-                return;
-            }
+            // if (scaleY >= 2f)
+            // {
+            //     StopScaling();
+            //     return;
+            // }
 
             scaleY += Time.deltaTime * 0.5f;
             transform.localScale = new Vector3(transform.localScale.x, scaleY, transform.localScale.z);

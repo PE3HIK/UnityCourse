@@ -13,7 +13,6 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private Transform spawnPoint2 = null;
     [SerializeField] private Transform spawnPoint3 = null;
     [SerializeField] private Transform spawnPoint4 = null;
-    [SerializeField] private Transform spawnPoint5 = null;
 
     [SerializeField] private Transform endPoint1 = null;
 

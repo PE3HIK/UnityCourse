@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class StickHeroController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class StickHeroController : MonoBehaviour
     [SerializeField] private Vector3 spawnPoint;
     [SerializeField] private float[] spawnSteps;
     [SerializeField] private StickHeroPlatform[] m_PlatformPrefabs;
+    [SerializeField] private Text Text;
 
 
     private List<StickHeroPlatform> m_Platforms = new List<StickHeroPlatform>();
@@ -50,7 +52,7 @@ public class StickHeroController : MonoBehaviour
 
         switch (currentGameState)
         {
-            // если не осуществлён страт игры
+            // если не осуществлён старт игры
             case EGameState.Wait:
                 currentGameState = EGameState.Scaling;
                 m_Stick.StartScaling();
@@ -103,7 +105,7 @@ public class StickHeroController : MonoBehaviour
             var offsetRight = platform.transform.localScale.x * 0.5f;
             var offset = spawnSteps[Random.Range(0, spawnSteps.Length)];
             platform.transform.position = new Vector3(offset + offsetLeft + offsetRight, 0f, 0f) + lastPlatformPosition;
-            Debug.Log($"{offset}   {offsetLeft}   {offsetRight}");
+            //Debug.Log($"{offset}   {offsetLeft}   {offsetRight}");
         }
 
 
@@ -138,6 +140,7 @@ public class StickHeroController : MonoBehaviour
         // находим мах длину стика
         float max = targetLength + platformSize * 0.5f;
 
+
         //при успехе переходим в центр следующей платформы
         if (length < min || length > max)
         {
@@ -164,7 +167,7 @@ public class StickHeroController : MonoBehaviour
     public void ShowScores()
     {
         currentGameState = EGameState.Defeate;
-
+        Text.text = $"Game Over at {counter}";
         print($"Game Over at {counter}");
     }
 }
