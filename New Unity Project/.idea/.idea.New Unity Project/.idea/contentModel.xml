@@ -8,7 +8,16 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BuiiPrimetives.cs" t="Include" />
+          <e p="FingerDriver" t="Include">
+            <e p="FingerDriverCamera.cs" t="Include" />
+            <e p="FingerDriverInput.cs" t="Include" />
+            <e p="FingerDriverPlayer.cs" t="Include" />
+            <e p="FingerDriverTrack.cs" t="Include" />
+          </e>
           <e p="HalloWorld.cs" t="Include" />
+          <e p="Mathf" t="Include">
+            <e p="MathfTriangles.cs" t="Include" />
+          </e>
           <e p="NewBehaviourScript.cs" t="Include" />
           <e p="StickHero" t="Include">
             <e p="StickHeroController.cs" t="Include" />
