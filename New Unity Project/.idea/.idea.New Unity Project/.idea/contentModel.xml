@@ -14,7 +14,12 @@
             <e p="FingerDriverPlayer.cs" t="Include" />
             <e p="FingerDriverTrack.cs" t="Include" />
           </e>
-          <e p="HalloWorld.cs" t="Include" />
+          <e p="Hop" t="Include">
+            <e p="HopCamera.cs" t="Include" />
+            <e p="HopInput.cs" t="Include" />
+            <e p="HopPlayer.cs" t="Include" />
+            <e p="HopTrack.cs" t="Include" />
+          </e>
           <e p="Mathf" t="Include">
             <e p="MathfTriangles.cs" t="Include" />
           </e>

@@ -60,7 +60,10 @@
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverInput.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverPlayer.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverTrack.cs" />
-     <Compile Include="Assets\Scripts\HalloWorld.cs" />
+     <Compile Include="Assets\Scripts\Hop\HopCamera.cs" />
+     <Compile Include="Assets\Scripts\Hop\HopInput.cs" />
+     <Compile Include="Assets\Scripts\Hop\HopPlayer.cs" />
+     <Compile Include="Assets\Scripts\Hop\HopTrack.cs" />
      <Compile Include="Assets\Scripts\Mathf\MathfTriangles.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\StickHero\StickHeroController.cs" />

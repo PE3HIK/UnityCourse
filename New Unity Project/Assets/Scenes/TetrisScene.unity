@@ -133,6 +133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7563425770788450483, guid: ac718256dced5014492a499386476ea5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7563425770788450639, guid: ac718256dced5014492a499386476ea5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -639,7 +644,6 @@ MonoBehaviour:
   spawnPoint2: {fileID: 109929954}
   spawnPoint3: {fileID: 669828576}
   spawnPoint4: {fileID: 466538412}
-  spawnPoint5: {fileID: 1601129646}
   endPoint1: {fileID: 887360814}
 --- !u!1 &1091557618
 GameObject:
