@@ -14,6 +14,12 @@
             <e p="FingerDriverPlayer.cs" t="Include" />
             <e p="FingerDriverTrack.cs" t="Include" />
           </e>
+          <e p="FitInTheHole" t="Include">
+            <e p="FitInTheHole_FigureTweener.cs" t="Include" />
+            <e p="FitInTheHole_LevelGenerator.cs" t="Include" />
+            <e p="FitInTheHole_Template.cs" t="Include" />
+            <e p="FitInTheHole_Wall.cs" t="Include" />
+          </e>
           <e p="Hop" t="Include">
             <e p="HopCamera.cs" t="Include" />
             <e p="HopInput.cs" t="Include" />

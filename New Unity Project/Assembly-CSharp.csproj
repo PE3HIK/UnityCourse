@@ -2,8 +2,9 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.3.9f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
+    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -29,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -38,6 +40,7 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -60,6 +63,10 @@
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverInput.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverPlayer.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverTrack.cs" />
+     <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_FigureTweener.cs" />
+     <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_LevelGenerator.cs" />
+     <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_Template.cs" />
+     <Compile Include="Assets\Scripts\FitInTheHole\FitInTheHole_Wall.cs" />
      <Compile Include="Assets\Scripts\Hop\HopCamera.cs" />
      <Compile Include="Assets\Scripts\Hop\HopInput.cs" />
      <Compile Include="Assets\Scripts\Hop\HopPlayer.cs" />

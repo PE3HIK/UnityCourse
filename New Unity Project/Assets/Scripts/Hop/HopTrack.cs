@@ -22,7 +22,7 @@ public class HopTrack : MonoBehaviour
         for (int i = 0; i < 25; i++)
         {
             GameObject obj = Instantiate(m_Platform, transform);
-            GameObject obj1 = Instantiate(m_Platform1, transform);
+            GameObject obj1 = Instantiate(m_Platform1);
 
             Vector3 pos = Vector3.zero;
             pos.z = 2 * (i + 1);
@@ -35,9 +35,7 @@ public class HopTrack : MonoBehaviour
             obj1.name = $"Platform {i}";
             platforms.Add(obj);
             platforms1.Add(obj1);
-
         }
-        
     }
 
     public bool ISBallOnPlatform(Vector3 position)
@@ -56,11 +54,10 @@ public class HopTrack : MonoBehaviour
             {
                 continue;
             }
-            platforms[i].SetActive(false);
-            platforms1[i].SetActive(true);
-
             
             nearestPlatform = platforms[i];
+            platforms[i].SetActive(false);
+            platforms1[i].SetActive(true);
             break;
         }
         
