@@ -22,6 +22,8 @@
           </e>
           <e p="Hop" t="Include">
             <e p="HopCamera.cs" t="Include" />
+            <e p="HopeTrackFade.cs" t="Include" />
+            <e p="HopeTrsckSpeed.cs" t="Include" />
             <e p="HopInput.cs" t="Include" />
             <e p="HopPlayer.cs" t="Include" />
             <e p="HopTrack.cs" t="Include" />

@@ -9,9 +9,10 @@ public class HopPlayer: MonoBehaviour
         [SerializeField] private float m_JumpHeigh = 1f;
         [SerializeField] private float m_JumpDistance = 2f;
 
-        [SerializeField] private float m_BallSpeed = 1f;
+        [SerializeField] public  float m_BallSpeed = 1f;
         [SerializeField] private HopInput m_Input;
         [SerializeField] private HopTrack m_Track;
+        
 
         private float iteration;
         private float startZ;
@@ -41,8 +42,10 @@ public class HopPlayer: MonoBehaviour
 
             iteration = 0f;
             startZ += m_JumpDistance;
-            if (m_Track.ISBallOnPlatform(transform.position))
+            
+            if (m_Track.ISBallOnPlatform(this))
             {
+                
                 return;
             }
 
