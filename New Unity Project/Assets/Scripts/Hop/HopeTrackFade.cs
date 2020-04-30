@@ -11,6 +11,7 @@ public class HopeTrackFade : MonoBehaviour
     public virtual void EffectPlayer(HopPlayer player)
          {
              player.m_BallSpeed = 1f;
+             player.m_JumpDistance = 2f;
          }
 
 

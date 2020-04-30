@@ -7,7 +7,7 @@ public class HopPlayer: MonoBehaviour
     {
         [SerializeField] private AnimationCurve m_JumpCurve;
         [SerializeField] private float m_JumpHeigh = 1f;
-        [SerializeField] private float m_JumpDistance = 2f;
+        [SerializeField] public float m_JumpDistance = 2f;
 
         [SerializeField] public  float m_BallSpeed = 1f;
         [SerializeField] private HopInput m_Input;
@@ -45,7 +45,6 @@ public class HopPlayer: MonoBehaviour
             
             if (m_Track.ISBallOnPlatform(this))
             {
-                
                 return;
             }
 

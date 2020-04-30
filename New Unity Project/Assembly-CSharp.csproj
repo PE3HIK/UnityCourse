@@ -72,7 +72,8 @@
      <Compile Include="Assets\Scripts\Hop\HopPlayer.cs" />
      <Compile Include="Assets\Scripts\Hop\HopTrack.cs" />
      <Compile Include="Assets\Scripts\Hop\HopeTrackFade.cs" />
-     <Compile Include="Assets\Scripts\Hop\HopeTrsckSpeed.cs" />
+     <Compile Include="Assets\Scripts\Hop\HopeTrackSpeed.cs" />
+     <Compile Include="Assets\Scripts\Hop\HopeTrackSpeedLength.cs" />
      <Compile Include="Assets\Scripts\Mathf\MathfTriangles.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\StickHero\StickHeroController.cs" />
