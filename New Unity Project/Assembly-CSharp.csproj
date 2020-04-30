@@ -59,6 +59,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BuiiPrimetives.cs" />
+     <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_GameController.cs" />
+     <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_LvLGenerotor.cs" />
+     <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Obstacles.cs" />
+     <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Snake.cs" />
+     <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Types.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverCamera.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverInput.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverPlayer.cs" />

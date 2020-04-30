@@ -8,6 +8,13 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BuiiPrimetives.cs" t="Include" />
+          <e p="ColorSnake" t="Include">
+            <e p="ColorSnake_GameController.cs" t="Include" />
+            <e p="ColorSnake_LvLGenerotor.cs" t="Include" />
+            <e p="ColorSnake_Obstacles.cs" t="Include" />
+            <e p="ColorSnake_Snake.cs" t="Include" />
+            <e p="ColorSnake_Types.cs" t="Include" />
+          </e>
           <e p="FingerDriver" t="Include">
             <e p="FingerDriverCamera.cs" t="Include" />
             <e p="FingerDriverInput.cs" t="Include" />
