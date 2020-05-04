@@ -39,9 +39,8 @@ namespace ColorSnake
 
         private void Update()
         {
-            m_Camera.transform.Translate(Vector3.up*Time.deltaTime);
-            m_Snake.transform.Translate(Vector3.up*Time.deltaTime);
-
+            m_Camera.transform.Translate(Vector3.up*Time.deltaTime*2);
+            m_Snake.transform.Translate(Vector3.up*Time.deltaTime*2);
         }
     }
 }

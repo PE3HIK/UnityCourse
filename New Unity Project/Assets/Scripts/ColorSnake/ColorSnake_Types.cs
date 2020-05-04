@@ -10,35 +10,31 @@ public class ColorSnake_Types : MonoBehaviour
 {
 // цвета объектов
 
-    [Serializable]
-    public class ColorType
+    [Serializable] public class ColorType
     {
-        public string Name; 
+        public string Name;
         public int Id;
-        public Color color; 
+        public Color color;
     }
     
-    [Serializable]
-    public class  ObjectType
+    [Serializable] public class  ObjectType
     {
         public string Name;
         public int Id;
         public GameObject Object;
-
     }
     
-    [Serializable]
-    public class  TemplateType
+    [Serializable] public class  TemplateType
     {
         public string Name;
         public int Id;
-        public Transform[] points; 
-
+        public Transform[] points;
     }
 
     [SerializeField] private ColorType[] m_Colors; 
     [SerializeField] private ObjectType[] m_Objects; 
     [SerializeField] private TemplateType[] m_Template;
+    
 
     public ColorType GetRandomColorType()
     {
@@ -67,5 +63,4 @@ public class ColorSnake_Types : MonoBehaviour
     {
         return m_Objects.FirstOrDefault(c => c.Id == id); 
     }
-
 }
