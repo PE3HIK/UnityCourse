@@ -8,8 +8,6 @@ public class ColorSnake_LvLGenerotor : MonoBehaviour
 {
     [SerializeField] private ColorSnake_Types m_Types;
     [SerializeField] private ColorSnake_GameController m_Controller;
-    [SerializeField] public GameObject ColorChanger;
-    [SerializeField] public GameObject Finish;
 
     private int Line = 1;
     private List<GameObject> Obstacles = new List<GameObject>();
@@ -57,30 +55,61 @@ public class ColorSnake_LvLGenerotor : MonoBehaviour
 
     private void GenerateObstacle()
     {
-        var template = m_Types.GetRandomOTemplateType();
-        var obstacle = new GameObject($"Obstacle_{Line}");
-
-        foreach (var point in template.points)
+        if (Line%3 != 0)
         {
-            var objType = m_Types.GetRandomObjectType();
-            var colorTyepe = m_Types.GetRandomColorType();
+            var template = m_Types.GetRandomOTemplateType();
+            var obstacle = new GameObject($"Obstacle_{Line}");
 
-            var obj = Instantiate(objType.Object, point.position, point.rotation);
-            obj.transform.parent = obstacle.transform;
+            foreach (var point in template.points)
+            {
+                var objType = m_Types.GetRandomObjectType();
+                var colorTyepe = m_Types.GetRandomColorType();
 
-            obj.GetComponent<SpriteRenderer>().color = colorTyepe.color;
+                var obj = Instantiate(objType.Object, point.position, point.rotation);
+                obj.transform.parent = obstacle.transform;
 
-            var obstacleComponent = obj.AddComponent<ColorSnake_Obstacles>();
-            obstacleComponent.ColorId = colorTyepe.Id;
+                obj.GetComponent<SpriteRenderer>().color = colorTyepe.color;
+
+                var obstacleComponent = obj.AddComponent<ColorSnake_Obstacles>();
+                obstacleComponent.ColorId = colorTyepe.Id;
+                obstacleComponent.ObjectType = 0; 
+            }
+
+            Vector3 pos = obstacle.transform.position;
+            pos.y = Line * 2;
+
+            obstacle.transform.position = pos;
+        
+            Line ++;
+            Obstacles.Add(obstacle);
         }
+        else
+        {
+            var template = m_Types.GetColorChangerTemplateType();
+            var obstacle = new GameObject($"Obstacle_{Line}");
 
-        Vector3 pos = obstacle.transform.position;
-        pos.y = Line * 2;
+            foreach (var point in template.points)
+            {
+                var objType = m_Types.GetColorChangerObjectType();
+                var colorTyepe = m_Types.GetRandomColorType();
 
-        obstacle.transform.position = pos;
+                var obj = Instantiate(objType.Object, point.position, point.rotation);
+                obj.transform.parent = obstacle.transform;
+
+                obj.GetComponent<SpriteRenderer>().color = colorTyepe.color;
+
+                var obstacleComponent = obj.AddComponent<ColorSnake_Obstacles>();
+                obstacleComponent.ColorId = colorTyepe.Id;
+                obstacleComponent.ObjectType = 1; 
+            }
+
+            Vector3 pos = obstacle.transform.position;
+            pos.y = Line * 2;
+
+            obstacle.transform.position = pos;
         
-        Line ++;
-        Obstacles.Add(obstacle);
-        
+            Line ++;
+            Obstacles.Add(obstacle);
+        }
     }
 }

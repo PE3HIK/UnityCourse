@@ -11,9 +11,14 @@ public class ColorSnake_Snake : MonoBehaviour
     [SerializeField] private ColorSnake_GameController m_GameController;
     [SerializeField] private SpriteRenderer m_SpriteRenderer;
     
+    [SerializeField] private Text m_ScoreText;
+    [SerializeField] private Text m_FinishText1;
+    [SerializeField] private Text m_FinishText2;
+
     private int currentType;
     private Vector3 position; 
-    
+    public int counter = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,17 +61,46 @@ public class ColorSnake_Snake : MonoBehaviour
         {
             return;
         }
-        
-        if (obstacle.ColorId == currentType)
+
+        if (obstacle.ObjectType == 0)
+        {
+            if (obstacle.ColorId == currentType)
+            {
+                SetupColor(obstacle.ColorId);
+                Destroy(obstacle.gameObject);
+                counter++;
+                m_ScoreText.text = $"{counter}";
+            }
+
+            if (obstacle.ColorId != currentType)
+            {
+                m_ScoreText.text = null;
+                
+                m_FinishText1.text = $"Твой счёт {counter}";
+                m_FinishText2.text = $"для продолжения жми ПРОБЕЛ";
+                Time.timeScale = 0;
+
+                    
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Time.timeScale = 1;
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+            }
+        }
+
+        if (obstacle.ObjectType == 1)
         {
             SetupColor(obstacle.ColorId);
-            Destroy(obstacle.gameObject);        
+            Destroy(obstacle.gameObject);
         }
         
-        
-        if (obstacle.ColorId != currentType)
+        if (obstacle.ObjectType == 2)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Destroy(obstacle.gameObject);
+
+           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
+
         }
     }
 }

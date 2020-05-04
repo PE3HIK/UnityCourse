@@ -35,6 +35,9 @@ public class ColorSnake_Types : MonoBehaviour
     [SerializeField] private ObjectType[] m_Objects; 
     [SerializeField] private TemplateType[] m_Template;
     
+    [SerializeField] private ObjectType m_ObjectsColorChanger; 
+    [SerializeField] private TemplateType m_TemplateColorChanger;
+    
 
     public ColorType GetRandomColorType()
     {
@@ -47,12 +50,21 @@ public class ColorSnake_Types : MonoBehaviour
         int rand = Random.Range(0, m_Objects.Length);
         return m_Objects[rand]; 
     }
-    
+    public ObjectType GetColorChangerObjectType()
+    {
+        return m_ObjectsColorChanger; 
+    }
     public TemplateType GetRandomOTemplateType()
     {
         int rand = Random.Range(0, m_Template.Length);
         return m_Template[rand]; 
     }
+    public TemplateType GetColorChangerTemplateType()
+    {
+        return m_TemplateColorChanger; 
+    }
+    
+    
 
     public ColorType GetColrType(int id)
     {

@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_GameController.cs" />
      <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_LvLGenerotor.cs" />
      <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Obstacles.cs" />
+     <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Rotate.cs" />
      <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Snake.cs" />
      <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_Types.cs" />
      <Compile Include="Assets\Scripts\FingerDriver\FingerDriverCamera.cs" />

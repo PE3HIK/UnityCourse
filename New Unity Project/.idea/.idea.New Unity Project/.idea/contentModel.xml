@@ -12,6 +12,7 @@
             <e p="ColorSnake_GameController.cs" t="Include" />
             <e p="ColorSnake_LvLGenerotor.cs" t="Include" />
             <e p="ColorSnake_Obstacles.cs" t="Include" />
+            <e p="ColorSnake_Rotate.cs" t="Include" />
             <e p="ColorSnake_Snake.cs" t="Include" />
             <e p="ColorSnake_Types.cs" t="Include" />
           </e>
