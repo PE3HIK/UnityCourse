@@ -18,10 +18,12 @@ public class ColorSnake_Snake : MonoBehaviour
     private int currentType;
     private Vector3 position; 
     public int counter = 0;
+    private bool gameOver = false; 
 
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         position = transform.position;
         var colorType = m_GameController.Types.GetRandomColorType();
         currentType = colorType.Id;
@@ -33,15 +35,20 @@ public class ColorSnake_Snake : MonoBehaviour
     {
         position = transform.position;
 
-        if (!Input.GetMouseButton(0))
+        if (gameOver == true)
         {
-            return;
+            if(Input.GetMouseButtonDown(0))
+            {
+                Time.timeScale = 1;
+                gameOver = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
 
         position.x = m_GameController.Camera.ScreenToWorldPoint(Input.mousePosition).x;
         position.x = Mathf.Clamp(position.x, m_GameController.Bounds.Left, m_GameController.Bounds.Right); // Mathf.Clamp - ограничивает позицию в пределах
 
-        transform.position = position; 
+        transform.position = position;
     }
 
     
@@ -77,14 +84,10 @@ public class ColorSnake_Snake : MonoBehaviour
                 m_ScoreText.text = null;
                 
                 m_FinishText1.text = $"Твой счёт {counter}";
-                m_FinishText2.text = $"для продолжения жми ПРОБЕЛ";
+                m_FinishText2.text = $"для продолжения кликни";
                 Time.timeScale = 0;
+                gameOver = true;
 
-                if(Input.GetMouseButton(0))
-                {
-                    Time.timeScale = 1;
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                }
             }
         }
 
