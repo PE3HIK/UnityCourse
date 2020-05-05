@@ -80,8 +80,7 @@ public class ColorSnake_Snake : MonoBehaviour
                 m_FinishText2.text = $"для продолжения жми ПРОБЕЛ";
                 Time.timeScale = 0;
 
-                    
-                if (Input.GetKeyDown(KeyCode.Escape))
+                if(Input.GetMouseButton(0))
                 {
                     Time.timeScale = 1;
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
