@@ -2,9 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
-    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
-    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.3.9f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -30,7 +29,6 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,7 +38,6 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -58,6 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\2D_Platformer\CaracterMovement.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\Enemy.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\GameManager.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\InputManager.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\Interfaces.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\MainMenue.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\Player.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\SceneLoader.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\StaticObject.cs" />
+     <Compile Include="Assets\Scripts\2D_Platformer\Test.cs" />
      <Compile Include="Assets\Scripts\BuiiPrimetives.cs" />
      <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_GameController.cs" />
      <Compile Include="Assets\Scripts\ColorSnake\ColorSnake_LvLGenerotor.cs" />
@@ -94,31 +101,34 @@
      <Compile Include="Assets\Scripts\StickHero\StickHeroPlayer.cs" />
      <Compile Include="Assets\Scripts\StickHero\StickHeroStick.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Работа/UnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Проекты/UnityCourse/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

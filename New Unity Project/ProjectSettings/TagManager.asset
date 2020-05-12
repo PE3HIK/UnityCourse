@@ -42,3 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGround
+    uniqueID: 2333127261
+    locked: 0
+  - name: Envirament
+    uniqueID: 2707018123
+    locked: 0
+  - name: Cheracters
+    uniqueID: 211546391
+    locked: 0
+  - name: UI
+    uniqueID: 766091281
+    locked: 0
