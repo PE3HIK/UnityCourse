@@ -4,7 +4,8 @@ namespace _2D_Platformer
 {
     public class Enemy : MonoBehaviour , IEnemy, IHitBox
     {
-        [SerializeField] private int health = 1; 
+        [SerializeField] private int health = 1;
+        [SerializeField] private Animator animator; 
 
         public void RegisterIEnemy()
         {
@@ -35,7 +36,8 @@ namespace _2D_Platformer
 
         public void Die()
         {
-            print("Противник мёртв");
+           animator.SetTrigger("Die");
+           Destroy(gameObject, 0.5f);
         }
     }
    

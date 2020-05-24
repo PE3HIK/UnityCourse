@@ -8,16 +8,27 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="2D_Platformer" t="Include">
-            <e p="CaracterMovement.cs" t="Include" />
+            <e p="CharacterMovement.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
             <e p="Interfaces.cs" t="Include" />
+            <e p="LevelObjectData.cs" t="Include" />
+            <e p="LoadingUI" t="Include">
+              <e p="CooldownCircle.cs" t="Include" />
+              <e p="FadeInScript.cs" t="Include" />
+              <e p="Rotate1.cs" t="Include" />
+            </e>
             <e p="MainMenue.cs" t="Include" />
+            <e p="PlatformCreator.cs" t="Include" />
+            <e p="PlatformRun.cs" t="Include" />
             <e p="Player.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerWeapon.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />
             <e p="StaticObject.cs" t="Include" />
             <e p="Test.cs" t="Include" />
+            <e p="WeaponData.cs" t="Include" />
           </e>
           <e p="BuiiPrimetives.cs" t="Include" />
           <e p="ColorSnake" t="Include">
