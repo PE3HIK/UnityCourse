@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="2D_Platformer" t="Include">
             <e p="CharacterMovement.cs" t="Include" />
+            <e p="Coin.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="InputManager.cs" t="Include" />
@@ -26,6 +27,7 @@
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerWeapon.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />
+            <e p="StarBonus.cs" t="Include" />
             <e p="StaticObject.cs" t="Include" />
             <e p="Test.cs" t="Include" />
             <e p="WeaponData.cs" t="Include" />

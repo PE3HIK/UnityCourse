@@ -13,6 +13,17 @@ public enum GameState
 }
 public class GameManager : MonoBehaviour
 {
+    private static int coins;
+
+    public static int Coins
+    {
+        get => coins;
+        set
+        {
+            coins = value; 
+            Debug.Log($"Coins count: {coins}");
+        }
+    }
     private static GameState currentGameState;
     public static GameState CurrentGameState => currentGameState;
     
